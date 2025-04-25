@@ -1,0 +1,160 @@
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--color-marron-rojizo);
+    color: white;
+    padding: 8px;
+    z-index: 100;
+    transition: top 0.3s;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* Mejoras para el contraste en modo oscuro */
+body.dark-mode {
+    --color-texto-oscuro: #f0f0f0;
+}
+
+/* Mejoras para el foco en elementos interactivos */
+a:focus, button:focus, input:focus, textarea:focus, [role="button"]:focus {
+    outline: 3px solid var(--color-marron-rojizo);
+    outline-offset: 3px;
+}
+
+body.dark-mode a:focus, 
+body.dark-mode button:focus, 
+body.dark-mode input:focus, 
+body.dark-mode textarea:focus, 
+body.dark-mode [role="button"]:focus {
+    outline-color: var(--color-verde-oliva);
+}
+
+/* Mejoras para la navegación por teclado */
+.theme-toggle:focus-visible,
+.mobile-menu-toggle:focus-visible {
+    outline: 3px solid var(--color-marron-rojizo);
+    outline-offset: 3px;
+}
+
+/* Mejoras para los enlaces */
+a {
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+nav a, .footer-links a, .btn, .platform-link, .logo a {
+    text-decoration: none;
+}
+
+/* Mejoras para los formularios */
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+/* Mejoras para el contraste de texto */
+.hero .tagline {
+    color: var(--color-marron-oscuro);
+    font-weight: 500;
+}
+
+body.dark-mode .hero .tagline {
+    color: var(--color-texto-claro);
+}
+
+/* Mejoras para el reproductor de audio */
+audio:focus {
+    outline: 3px solid var(--color-marron-rojizo);
+}
+
+/* Mejoras para los botones */
+.btn {
+    font-weight: 600;
+}
+
+/* Mejoras para el contraste en modo oscuro */
+body.dark-mode .episode-meta,
+body.dark-mode .footer-links a,
+body.dark-mode .footer-social a {
+    color: var(--color-beige-claro);
+}
+
+/* Mejoras para la legibilidad */
+p, li {
+    line-height: 1.7;
+}
+
+/* Mejoras para el espaciado */
+main {
+    margin-bottom: var(--spacing-lg);
+}
+
+/* Mejoras para el contraste de iconos */
+.social-icons a {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body.dark-mode .social-icons a {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Mejoras para la legibilidad de enlaces en el footer */
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Mejoras para el contraste de botones */
+.primary-btn {
+    color: white;
+    font-weight: 700;
+}
+
+/* Mejoras para el contraste en modo oscuro */
+body.dark-mode .primary-btn:hover {
+    background-color: var(--color-verde-oliva);
+}
+
+/* Mejoras para la legibilidad de formularios */
+input, textarea {
+    font-size: 1rem;
+    padding: 0.75rem;
+}
+
+/* Mejoras para el contraste de errores */
+.error-message {
+    font-weight: 600;
+    background-color: rgba(231, 76, 60, 0.1);
+    padding: 0.5rem;
+    border-radius: var(--border-radius-sm);
+}
+
+/* Mejoras para la accesibilidad de imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+}

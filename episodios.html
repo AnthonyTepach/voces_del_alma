@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Episodios - Voces del Alma</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Voces del Alma</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="episodios.html" class="active">Episodios</a></li>
+                    <li><a href="sobre.html">Sobre el Podcast</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="episodes-header">
+            <div class="container">
+                <h2>Todos los Episodios</h2>
+                <p>Explora todos los episodios de Voces del Alma, donde las palabras se transforman en emociones y la poesía se convierte en voz.</p>
+                <div class="episodes-filter">
+                    <input type="text" id="search-episodes" placeholder="Buscar episodios...">
+                </div>
+            </div>
+        </section>
+
+        <section class="episodes-list">
+            <div class="container">
+                <div class="episodes-grid" id="all-episodes">
+                    <!-- Los episodios se cargarán dinámicamente con JavaScript -->
+                </div>
+                <div class="pagination">
+                    <!-- La paginación se generará dinámicamente si es necesario -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="player-bar hidden">
+        <div class="container">
+            <div class="player-content">
+                <div class="player-info">
+                    <span class="player-title">Episodio</span>
+                </div>
+                <div class="player-controls">
+                    <button class="play-pause">
+                        <i class="fas fa-play"></i>
+                    </button>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                        <div class="time">
+                            <span class="current-time">0:00</span>
+                            <span class="duration">0:00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="player-volume">
+                    <i class="fas fa-volume-up"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Voces del Alma</h2>
+                    <p>Un espacio donde las palabras se transforman en emociones</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Enlaces</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="episodios.html">Episodios</a></li>
+                        <li><a href="sobre.html">Sobre el Podcast</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Síguenos</h3>
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Voces del Alma. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/episodes.js"></script>
+</body>
+</html>

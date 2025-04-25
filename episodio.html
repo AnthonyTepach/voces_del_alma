@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Episodio - Voces del Alma</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Voces del Alma</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="episodios.html">Episodios</a></li>
+                    <li><a href="sobre.html">Sobre el Podcast</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="episode-header">
+            <div class="container">
+                <div class="episode-image-container">
+                    <img src="" alt="" id="episode-image" class="episode-featured-image">
+                </div>
+            </div>
+        </section>
+
+        <section class="episode-content">
+            <div class="container">
+                <div class="episode-details">
+                    <h2 id="episode-title"></h2>
+                    <div class="episode-meta">
+                        <span id="episode-date"></span>
+                        <span id="episode-duration"></span>
+                    </div>
+                    
+                    <div class="episode-player">
+                        <audio id="audio-player" controls>
+                            <source src="" type="audio/mpeg" id="audio-source">
+                            Tu navegador no soporta el elemento de audio.
+                        </audio>
+                    </div>
+                    
+                    <div class="episode-description-full">
+                        <h3>Descripción</h3>
+                        <div id="episode-description"></div>
+                    </div>
+                    
+                    <div class="episode-transcript">
+                        <h3>Transcripción</h3>
+                        <div id="episode-transcript"></div>
+                    </div>
+                    
+                    <div class="episode-share">
+                        <h3>Compartir</h3>
+                        <div class="share-buttons">
+                            <a href="#" class="share-button" id="share-facebook">
+                                <i class="fab fa-facebook"></i>
+                                <span>Facebook</span>
+                            </a>
+                            <a href="#" class="share-button" id="share-twitter">
+                                <i class="fab fa-twitter"></i>
+                                <span>Twitter</span>
+                            </a>
+                            <a href="#" class="share-button" id="share-whatsapp">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>WhatsApp</span>
+                            </a>
+                            <button class="share-button" id="copy-link">
+                                <i class="fas fa-link"></i>
+                                <span>Copiar enlace</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="episode-navigation">
+                        <a href="#" class="btn secondary-btn" id="prev-episode">
+                            <i class="fas fa-arrow-left"></i> Episodio anterior
+                        </a>
+                        <a href="#" class="btn secondary-btn" id="next-episode">
+                            Siguiente episodio <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Voces del Alma</h2>
+                    <p>Un espacio donde las palabras se transforman en emociones</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Enlaces</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="episodios.html">Episodios</a></li>
+                        <li><a href="sobre.html">Sobre el Podcast</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Síguenos</h3>
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Voces del Alma. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/episodio.js"></script>
+</body>
+</html>

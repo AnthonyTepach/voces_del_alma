@@ -1,0 +1,466 @@
+/* Estilos adicionales para mejorar la experiencia de usuario y responsive */
+
+/* Mejoras para accesibilidad */
+:focus {
+    outline: 2px solid var(--color-marron-rojizo);
+    outline-offset: 2px;
+}
+
+input:focus, textarea:focus, button:focus {
+    outline: 2px solid var(--color-marron-rojizo);
+    box-shadow: 0 0 0 2px rgba(181, 105, 79, 0.3);
+}
+
+/* Mejoras para formularios */
+.form-group {
+    margin-bottom: var(--spacing-md);
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: var(--spacing-xs);
+    font-weight: 500;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius-sm);
+    font-family: var(--font-cuerpo);
+    transition: border-color var(--transition-fast);
+}
+
+.form-group input:hover, 
+.form-group textarea:hover {
+    border-color: var(--color-marron-terroso);
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    border-color: var(--color-marron-rojizo);
+}
+
+.error-message {
+    color: #e74c3c;
+    font-size: 0.85rem;
+    margin-top: 5px;
+}
+
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: var(--spacing-sm);
+    border-radius: var(--border-radius-sm);
+    margin-top: var(--spacing-md);
+    display: flex;
+    align-items: center;
+}
+
+.success-message i {
+    font-size: 1.5rem;
+    margin-right: var(--spacing-sm);
+}
+
+input.error, textarea.error {
+    border-color: #e74c3c;
+}
+
+/* Mejoras para la página de episodio */
+.episode-header {
+    background-color: var(--color-beige-calido);
+    padding: var(--spacing-lg) 0;
+}
+
+.episode-image-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.episode-featured-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius-md);
+    box-shadow: 0 5px 15px var(--color-sombra);
+}
+
+.episode-content {
+    padding: var(--spacing-lg) 0;
+}
+
+.episode-details {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.episode-meta {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+    color: var(--color-marron-terroso);
+}
+
+.episode-player {
+    margin: var(--spacing-md) 0;
+}
+
+audio {
+    width: 100%;
+    margin-bottom: var(--spacing-md);
+}
+
+.episode-description-full,
+.episode-transcript {
+    margin-bottom: var(--spacing-lg);
+}
+
+.episode-transcript blockquote {
+    background-color: var(--color-beige-claro);
+    padding: var(--spacing-md);
+    border-left: 4px solid var(--color-marron-rojizo);
+    margin: var(--spacing-md) 0;
+    border-radius: 0 var(--border-radius-sm) var(--border-radius-sm) 0;
+}
+
+.episode-share {
+    margin-bottom: var(--spacing-lg);
+}
+
+.share-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-sm);
+}
+
+.share-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background-color: var(--color-beige-claro);
+    border: none;
+    border-radius: var(--border-radius-sm);
+    color: var(--color-marron-oscuro);
+    font-family: var(--font-cuerpo);
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.share-button:hover {
+    background-color: var(--color-marron-rojizo);
+    color: var(--color-texto-claro);
+}
+
+.episode-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: var(--spacing-lg);
+}
+
+/* Mejoras para la página Sobre el Podcast */
+.about-header {
+    background-color: var(--color-beige-calido);
+    padding: var(--spacing-lg) 0;
+    text-align: center;
+}
+
+.about-story,
+.about-author-full,
+.about-vision {
+    padding: var(--spacing-lg) 0;
+}
+
+.about-story {
+    background-color: var(--color-blanco-roto);
+}
+
+.about-author-full {
+    background-color: var(--color-beige-claro);
+}
+
+.about-vision {
+    background-color: var(--color-blanco-roto);
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.author-profile {
+    display: flex;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-md);
+    align-items: center;
+}
+
+.author-image-large {
+    flex: 0 0 300px;
+}
+
+.author-image-large img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px var(--color-sombra);
+}
+
+.author-bio {
+    flex: 1;
+}
+
+/* Mejoras para la página de Contacto */
+.contact-header {
+    background-color: var(--color-beige-calido);
+    padding: var(--spacing-lg) 0;
+    text-align: center;
+}
+
+.contact-form-section {
+    padding: var(--spacing-lg) 0;
+    background-color: var(--color-blanco-roto);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contact-method {
+    display: flex;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+    align-items: flex-start;
+}
+
+.contact-method i {
+    font-size: 1.5rem;
+    color: var(--color-marron-rojizo);
+    margin-top: 5px;
+}
+
+.contact-method h4 {
+    margin-bottom: 5px;
+}
+
+.contact-social {
+    margin-top: var(--spacing-xs);
+}
+
+.faq-section {
+    padding: var(--spacing-lg) 0;
+    background-color: var(--color-beige-claro);
+}
+
+.faq-section h3 {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.faq-item {
+    max-width: 800px;
+    margin: 0 auto var(--spacing-md);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.faq-item h4 {
+    margin-bottom: var(--spacing-xs);
+    color: var(--color-marron-oscuro);
+}
+
+/* Mejoras para la página de Episodios */
+.episodes-header {
+    background-color: var(--color-beige-calido);
+    padding: var(--spacing-lg) 0;
+    text-align: center;
+}
+
+.episodes-filter {
+    max-width: 600px;
+    margin: var(--spacing-md) auto;
+}
+
+.episodes-filter input {
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    font-family: var(--font-cuerpo);
+    font-size: 1rem;
+}
+
+.episodes-list {
+    padding: var(--spacing-lg) 0;
+    background-color: var(--color-blanco-roto);
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-lg);
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: var(--color-beige-claro);
+    border-radius: var(--border-radius-sm);
+    color: var(--color-marron-oscuro);
+    transition: all var(--transition-fast);
+}
+
+.pagination a:hover,
+.pagination a.active {
+    background-color: var(--color-marron-rojizo);
+    color: var(--color-texto-claro);
+}
+
+/* Mejoras para el placeholder de autor */
+#author-placeholder-large {
+    background-color: var(--color-beige-calido);
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-marron-oscuro);
+    font-size: 1.2rem;
+    border-radius: 50%;
+}
+
+/* Mejoras adicionales para responsive */
+@media (max-width: 992px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .author-profile {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .author-image-large {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .episode-navigation {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+    
+    .episode-navigation a {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .share-buttons {
+        justify-content: center;
+    }
+    
+    audio {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .episode-meta {
+        flex-direction: column;
+        gap: var(--spacing-xs);
+    }
+    
+    .share-button {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+    
+    .contact-method {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+/* Animaciones mejoradas */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+/* Mejoras para la carga de imágenes */
+.lazy-load {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.lazy-load.loaded {
+    opacity: 1;
+}
+
+/* Mejoras para el modo oscuro */
+body.dark-mode .form-group input, 
+body.dark-mode .form-group textarea {
+    background-color: #333;
+    border-color: #555;
+    color: var(--color-texto-claro);
+}
+
+body.dark-mode .success-message {
+    background-color: #264c36;
+    color: #d4edda;
+}
+
+body.dark-mode .faq-item {
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .episode-transcript blockquote {
+    background-color: #333;
+}
+
+body.dark-mode .share-button {
+    background-color: #444;
+    color: var(--color-texto-claro);
+}
+
+body.dark-mode .pagination a {
+    background-color: #444;
+    color: var(--color-texto-claro);
+}
+
+/* Mejoras para la accesibilidad en modo oscuro */
+body.dark-mode :focus {
+    outline-color: var(--color-verde-oliva);
+}
+
+body.dark-mode input:focus, 
+body.dark-mode textarea:focus, 
+body.dark-mode button:focus {
+    outline-color: var(--color-verde-oliva);
+    box-shadow: 0 0 0 2px rgba(126, 171, 58, 0.3);
+}
